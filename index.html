@@ -1,106 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的網頁</title>
+    <title>圖片範例頁面</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
         }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
+        .container {
+            margin-top: 50px;
         }
-
-        nav {
-            text-align: center;
-            margin: 1em 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>歡迎來到我的網頁</h1>
-    </header>
-
-    <nav>
-        <a href="#home">首頁</a>
-        <a href="#about">關於我們</a>
-        <a href="#contact">聯絡我們</a>
-    </nav>
-
-    <section id="home">
-        <h2>這是我的首頁</h2>
-        <p>歡迎光臨！這是一個簡單的網頁範例。</p>
-        <button onclick="greet()">點我問候</button>
-    </section>
-
-    <section id="about">
-        <h2>關於我們</h2>
-        <p>我們是一群熱愛科技的團隊，致力於創造有趣且實用的網頁應用。</p>
-    </section>
-
-    <section id="contact">
-        <h2>聯絡我們</h2>
-        <p>如果你有任何問題，歡迎隨時聯絡我們。</p>
-    </section>
-
-    <footer>
-        <p>版權所有 &copy; 2024</p>
-    </footer>
-
-    <script>
-        function greet() {
-            alert("你好！歡迎來到這個網站！");
-        }
-    </script>
+    <div class="container">
+        <h1>歡迎來到我的圖片頁面</h1>
+        <p>以下是示範圖片：</p>
+        <img src="path_to_your_image/your_image_name.png" alt="示範圖片">
+    </div>
 </body>
 </html>
+
 
   
