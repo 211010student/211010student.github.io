@@ -3,56 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>圖片展示網頁</title>
+    <title>三張圖片展示網頁</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             background-color: #f0f0f0;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 0;
         }
         .container {
-            text-align: center;
+            margin-top: 50px;
         }
         h1 {
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
-        .image-gallery {
+        .image-wrapper {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* 設置圖片間的間距 */
         }
-        .image-gallery img {
-            max-width: 100%;
+        .image-wrapper img {
+            max-width: 30%; /* 圖片寬度佔容器的30% */
             height: auto;
-            border: 5px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        p {
-            margin-top: 20px;
-            color: #666;
+            border: 3px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>歡迎來到我的圖片展示頁面</h1>
-        <div class="image-gallery">
-            <img src="https://i.imgur.com/UY3dI2Z.png"展示圖片1">
-            <img src="https://i.imgur.com/u8E3Y4J.jpeg"展示圖片2">
-            <img src="undefined"展示圖片3">
+        <h1>三張圖片展示</h1>
+        <div class="image-wrapper">
+            <img src="undefined" alt="圖片 1">
+            <img src="https://i.imgur.com/u8E3Y4J.jpeg
+" alt="圖片 2">
+            <img src="https://i.imgur.com/UY3dI2Z.png
+" alt="圖片 3">
         </div>
-        <p>這是三張示範圖片。</p>
+        <p>這三張圖片均勻分佈在中間，透過flexbox進行排版。</p>
     </div>
 </body>
 </html>
+
 
 
 
